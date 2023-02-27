@@ -1,0 +1,13 @@
+{
+    "name": "Free Haaretz",
+    "description": "Bypass the paywall of Haaretz group",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "icon128.png"
+    },
+    "permissions": ["tabs"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
