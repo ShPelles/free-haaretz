@@ -1,12 +1,19 @@
 {
     "name": "Free Haaretz",
     "description": "Bypass the paywall of Haaretz group",
-    "version": "0.1",
+    "version": "0.2",
     "manifest_version": 3,
     "action": {
         "default_icon": "icon128.png"
     },
-    "permissions": ["tabs"],
+    "host_permissions": [
+        "https://www.haaretz.co.il/",
+        "https://www.themarker.com/"
+    ],
+    "permissions": [
+        "webRequest",
+        "declarativeNetRequest"
+    ],
     "background": {
         "service_worker": "background.js"
     }
