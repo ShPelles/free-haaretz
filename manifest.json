@@ -10,11 +10,16 @@
         "https://www.haaretz.co.il/",
         "https://www.themarker.com/"
     ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
     "permissions": [
-        "webRequest",
         "declarativeNetRequest"
-    ],
-    "background": {
-        "service_worker": "background.js"
-    }
+    ]
 }

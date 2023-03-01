@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://www.haaretz.co.il/tmr/\\1"
+            }
+        },
+        "condition": {
+            "regexFilter": "https:\\/\\/www\\.haaretz\\.co\\.il\\/.+([\\d\\w]{8}-[\\d\\w]+-[\\d\\w]+-[\\d\\w]+-[\\d\\w]+)",
+            "resourceTypes": [
+                "main_frame"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "regexSubstitution": "https://www.themarker.com/tmr/\\1"
+            }
+        },
+        "condition": {
+            "regexFilter": "https:\\/\\/www\\.themarker\\.com\\/.+([\\d\\w]{8}-[\\d\\w]+-[\\d\\w]+-[\\d\\w]+-[\\d\\w]+)",
+            "resourceTypes": ["main_frame"]
+        }
+    }
+]
